@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss//bootstrap.scss";
+@import "../css/Vazirmatn-font-face.css";
+body {
+  font-family: Vazirmatn;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.heroBg {
+  background: rgb(202, 207, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 223, 223, 1) 0%,
+    rgba(202, 207, 196, 1) 100%
+  );
+}
