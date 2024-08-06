@@ -1,11 +1,20 @@
 $primary: darkblue;
 $secondary: #aa33d6;
 $light: #6c757d;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
 body {
   font-family: Vazirmatn;
 }
+// pointer cursor for elements
 .cursor-pointer {
   cursor: pointer;
 }
@@ -24,6 +33,7 @@ li{
 #footer-p-col1 {
   line-height: 2;
 }
+// email input in footer
 input{
   border: none;
   background-color: #dbdfd8;
