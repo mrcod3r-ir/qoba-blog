@@ -1,5 +1,9 @@
-@import "../node_modules/bootstrap/scss//bootstrap.scss";
+$primary: darkblue;
+$secondary: #aa33d6;
+$light: #6c757d;
+@import "..//node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
+
 body {
   font-family: Vazirmatn;
 }
@@ -15,3 +19,4 @@ body {
     rgba(202, 207, 196, 1) 100%
   );
 }
+ 
