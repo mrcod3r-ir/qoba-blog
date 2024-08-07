@@ -1,5 +1,6 @@
-@import "../node_modules/bootstrap/scss//bootstrap.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
+// qoba-blog
 body {
   font-family: Vazirmatn;
 }
@@ -15,3 +16,11 @@ body {
     rgba(202, 207, 196, 1) 100%
   );
 }
+
+// my site
+
+.name h1{
+  color: blueviolet;
+}
+
+
