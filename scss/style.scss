@@ -7,10 +7,6 @@ $light: #6c757d;
 body {
   font-family: Vazirmatn;
 }
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .heroBg {
   background: rgb(202, 207, 196);
   background: linear-gradient(
@@ -19,4 +15,19 @@ body {
     rgba(202, 207, 196, 1) 100%
   );
 }
- 
+// sajad classes 
+.sajad-p{
+  color: #6c757d;
+}
+.text-blue-500{
+  color: $blue-600;
+}
+.sajad-hr{
+  margin: 32px 0;
+}
+.sajad-p-2{
+  font-size: 14px;
+}
+.sajad-darkblue{
+  color: darkblue;
+}
