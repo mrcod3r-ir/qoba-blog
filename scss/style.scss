@@ -1,26 +1,76 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
-// qoba-blog
+
+// font-family
+* {
+    box-sizing: border-box;
+}
 body {
-  font-family: Vazirmatn;
-}
-.cursor-pointer {
-  cursor: pointer;
+    font-family: Vazirmatn;
 }
 
-.heroBg {
-  background: rgb(202, 207, 196);
-  background: linear-gradient(
-    90deg,
-    rgba(223, 223, 223, 1) 0%,
-    rgba(202, 207, 196, 1) 100%
-  );
-}
-
-// my site
-
-.name h1{
-  color: blueviolet;
+.d-flex input{
+    border: 1px solid darkblue;
 }
 
 
+.d-flex input:hover,.d-flex input:focus{
+    border: 0;
+}
+
+.bg {
+    background: rgb(202, 207, 196);
+    background: linear-gradient(
+      90deg,
+      rgba(223, 223, 223, 1) 0%,
+      rgba(202, 207, 196, 1) 100%
+    );
+}
+
+.items input:focus {
+    outline: 0;
+}
+
+.items textarea:focus {
+    outline: 0;
+}
+.items input{
+    border: 1px solid gray;
+}
+
+.items input::placeholder {
+    font-size: 12px;
+}
+
+.comment p {
+    background-color: darkblue;
+    color: white;
+}
+
+
+.items textarea::placeholder {
+    font-size: 12px;
+}
+
+.comment {
+    background: rgb(202, 207, 196);
+    background: linear-gradient(
+      90deg,
+      rgba(223, 223, 223, 1) 0%,
+      rgba(202, 207, 196, 1) 100%
+    );
+}
+
+.rule {
+    border-top: 1px gray;
+    border-top-style: dotted;
+}
+
+.submit input{
+    background-color: darkblue;
+    color: white;
+}
+
+.submit input:hover {
+    background-color: rgb(3, 3, 152);
+}
