@@ -1,6 +1,23 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
+// qoba-blog
+body {
+  font-family: Vazirmatn;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 
+.heroBg {
+  background: rgb(202, 207, 196);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 223, 223, 1) 0%,
+    rgba(202, 207, 196, 1) 100%
+  );
+}
+
+// single-blog start
 // font-family
 * {
     box-sizing: border-box;
@@ -65,7 +82,7 @@ body {
     border-top: 1px gray;
     border-top-style: dotted;
 }
-
+// actions of comment button
 .submit input{
     background-color: darkblue;
     color: white;
@@ -74,3 +91,8 @@ body {
 .submit input:hover {
     background-color: rgb(3, 3, 152);
 }
+// single-blog end 
+
+
+
+
