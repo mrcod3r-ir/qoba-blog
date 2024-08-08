@@ -57,30 +57,107 @@
       >
         پایگاه خبری مسجد قبا
       </h1>
-      <div class="col-lg-6 mx-auto position-relative z-3">
-        <p class="lead mb-4">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-          استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-          ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
-          کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی
-          در شصت و سه درصد گذشته حال و آینده،
-        </p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
-            آخرین اخبار
-          </button>
-        </div>
-      </div>
+      <h3 class="sajad-darkblue mt-5">تماس با ما</h3> 
     </div>
-    <!-- container -->
+    <!--container-->
     <div class="container">
-      <!-- special post -->
-      <div class="row">
-        <div class="col-3">asdf</div>
-        <div class="col-9">asdf</div>
+      <div class="row gap-5">
+        <!--first column-->
+        <div class="col">
+          <div class="d-flex justify-content-between">
+            <h3 class="fw-bold sajad-darkblue">آدرس</h3>
+            <div>
+              <p class="m-0 sajad-p">قم</p>
+              <p class="m-0 sajad-p">جاده قدیم قم کاشان، ابتدای جاده کهک</p>
+              <p class="m-0 sajad-p">نبش شهرک امید</p>
+            </div>
+          </div>
+          <hr class="sajad-hr">
+          <div class="d-flex justify-content-between">
+            <h3 class="fw-bold sajad-darkblue">ایمیل</h3>
+            <div>
+              <a href="#" class="text-decoration-none"><p class="m-0 text-blue-500">info@loremipsum.com</p></a>
+            </div>
+          </div>
+          <hr class="sajad-hr">
+          <div class="d-flex justify-content-between">
+            <h3 class="fw-bold sajad-darkblue">تلفن</h3>
+            <div>
+              <a href="#" class="text-decoration-none"><p class="m-0 text-blue-500">+989123456789</p></a>
+              <p class="m-0 sajad-p sajad-p-2">مدیریت کفش تیبا</p>
+              <p class="m-0 sajad-p sajad-p-2">ساعت پاسخگویی:از ساعت 7 الی 19</p>
+            </div>
+          </div>
+          <hr class="sajad-hr">
+          <div class="d-flex justify-content-between">
+            <h3 class="fw-bold sajad-darkblue">شبکه های اجتماعی</h3>
+            <div class="d-flex gap-3">
+              <a href="#"><img src="images/insta-icon.svg" width="25px"></a>
+              <a href="#"><img src="images/tel-icon.svg" width="25px"></a>
+              <a href="#"><img src="images/eitaa-icon.svg" width="25px"></a>
+            </div>
+          </div>
+        </div>
+        <!--second col-->
+        <form class="col d-flex flex-column gap-4">
+          <div class="d-flex gap-4">
+            <input type="text" placeholder="نام شما" class=" form-control sajad-input sajad-script-input-1">
+            <input type="email" placeholder="ایمیل شما" class=" form-control sajad-input sajad-script-input-2">
+          </div>
+          <input type="text" placeholder="موضوع شما" class=" form-control sajad-input" required>
+          <textarea class="form-control sajad-textarea" id="textAreaExample1" rows="4" placeholder="پیام شما"></textarea>
+          <div class="d-inline-flex gap-2 hv-bg-g">
+            <input type="checkbox" name="check" id="check" class="m-0 cursor-pointer">
+            <label for="check" class="m-0 cursor-pointer">با شرایط و ضوابط موافقم</label>
+          </div>
+          <div class="d-flex justify-content-start sent-btn">
+            <button type="submit" class="btn btn-light">ارسال</button>
+          </div>
+        </form>
       </div>
     </div>
     <!-- script  -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        //جابجایی دکمه ارسال هنگام تغییر دکمه چکباکس
+        var check = document.getElementById("check")
+        check.addEventListener('change', changeFunction);
+        check.style.margin="100px"
+        function changeFunction() {
+          var sBtnLight = document.querySelector(".sent-btn");
+          if (sBtnLight.classList.contains("justify-content-start")) {
+            sBtnLight.classList.remove("justify-content-start");
+            sBtnLight.classList.add("justify-content-end");
+            var sBtnLightChild=document.querySelector("form div button")
+            sBtnLightChild.classList.remove("btn-light")
+            sBtnLightChild.classList.add("btn-primary")
+          } 
+
+          else{
+          sBtnLight.classList.remove("justify-content-end");
+            sBtnLight.classList.add("justify-content-start");
+            var sBtnLightChild=document.querySelector("form div button")
+            sBtnLightChild.classList.remove("btn-primary")
+            sBtnLightChild.classList.add("btn-light")
+          }
+          //خطا دادن در صورت خالی بودن اینپوت اسم و ایمیل
+          var input1=document.querySelector(".sajad-script-input-1")
+          var input2=document.querySelector(".sajad-script-input-2")
+          if (input1.value=="") {
+            input1.classList.add("is-invalid")
+          } 
+          else{
+            input1.classList.remove("is-invalid")
+          }
+          if (input2.value=="") {
+            input2.classList.add("is-invalid")
+          } 
+          else {
+            input2.classList.remove("is-invalid")
+          }
+          console.log(input1.value);
+        }
+        
+    </script>
   </body>
 </html>

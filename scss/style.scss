@@ -1,12 +1,12 @@
-@import "../node_modules/bootstrap/scss//bootstrap.scss";
+$primary: #00008b;
+$secondary: #aa33d6;
+$light: #6c757d;
+@import "..//node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
+
 body {
   font-family: Vazirmatn;
 }
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .heroBg {
   background: rgb(202, 207, 196);
   background: linear-gradient(
@@ -15,3 +15,43 @@ body {
     rgba(202, 207, 196, 1) 100%
   );
 }
+.cursor-pointer{
+  cursor: pointer;
+}
+// sajad classes 
+.sajad-p{
+  color: #6c757d;
+}
+.text-blue-500{
+  color: $blue-600;
+}
+.sajad-hr{
+  margin: 32px 0;
+}
+.sajad-p-2{
+  font-size: 14px;
+}
+.sajad-darkblue{
+  color: darkblue;
+}
+.sajad-input{
+  min-height: 45px;
+}
+.sajad-input-2{
+  min-height: 250px;
+  word-wrap: break-all;
+}
+.sajad-textarea{
+  height: 250px;
+}
+.hv-bg-g:hover{
+  background-color: rgb(235, 232, 232);
+  transition: 0.3s;
+}
+div[class="d-inline-flex gap-2 hv-bg-g"]{
+  width: 40%;
+}
+button[class="btn btn-light"]{
+  background-color: rgb(197, 197, 197);
+}
+//done
