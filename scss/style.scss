@@ -1,4 +1,4 @@
-$primary: darkblue;
+$primary: #00008b;
 $secondary: #aa33d6;
 $light: #6c757d;
 @import "..//node_modules/bootstrap/scss/bootstrap.scss";
@@ -15,6 +15,9 @@ body {
     rgba(202, 207, 196, 1) 100%
   );
 }
+.cursor-pointer{
+  cursor: pointer;
+}
 // sajad classes 
 .sajad-p{
   color: #6c757d;
@@ -30,4 +33,24 @@ body {
 }
 .sajad-darkblue{
   color: darkblue;
+}
+.sajad-input{
+  min-height: 45px;
+}
+.sajad-input-2{
+  min-height: 250px;
+  word-wrap: break-all;
+}
+.sajad-textarea{
+  height: 250px;
+}
+.hv-bg-g:hover{
+  background-color: rgb(235, 232, 232);
+  transition: 0.3s;
+}
+div[class="d-inline-flex gap-2 hv-bg-g"]{
+  width: 40%;
+}
+button[class="btn btn-light"]{
+  background-color: rgb(197, 197, 197);
 }
