@@ -25,7 +25,7 @@ body {
 body {
     font-family: Vazirmatn;
 }
-// head
+// head for searching
 .d-flex input{
     border: 1px solid darkblue;
 }
@@ -33,6 +33,16 @@ body {
 
 .d-flex input:hover,.d-flex input:focus{
     border: 0;
+} 
+
+// style for title
+.bg {
+    color: darkblue;
+}
+
+// font size of time and author
+.ta {
+    font-size: 14px;
 }
 
 // background color
@@ -63,7 +73,7 @@ body {
 .items textarea::placeholder {
     font-size: 12px;
 }
-// background of comment-text1
+// background of comment-text
 .comment p {
     background-color: darkblue;
     color: white;
@@ -80,7 +90,7 @@ body {
       rgba(202, 207, 196, 1) 100%
     );
 }
-
+// rule of page border 
 .rule {
     border-top: 1px gray;
     border-top-style: dotted;
