@@ -73,6 +73,12 @@ body {
 .items textarea::placeholder {
     font-size: 12px;
 }
+
+.items textarea {
+    height: 100px; 
+    border-radius: 4px; 
+    width: 300px;
+}
 // background of comment-text
 .comment p {
     background-color: darkblue;
