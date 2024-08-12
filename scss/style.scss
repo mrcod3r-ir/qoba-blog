@@ -1,8 +1,21 @@
-@import "../node_modules/bootstrap/scss//bootstrap.scss";
+// change variables
+$primary: darkblue;
+$secondary: #aa33d6;
+$light: #6c757d;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
 body {
   font-family: Vazirmatn;
 }
+// pointer cursor for elements
 .cursor-pointer {
   cursor: pointer;
 }
@@ -14,4 +27,20 @@ body {
     rgba(223, 223, 223, 1) 0%,
     rgba(202, 207, 196, 1) 100%
   );
+}
+li{
+  list-style-type: none;
+}
+#footer-p-col1 {
+  line-height: 2;
+}
+// email input in footer
+input{
+  border: none;
+  background-color: #dbdfd8;
+  border-radius: 8px;
+  padding: 13px 10px 13px 35px;
+  width: 215px;
+  background-repeat: no-repeat;
+  outline: 2px solid $primary;
 }
