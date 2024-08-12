@@ -2,95 +2,71 @@
 a{
     text-decoration: none;
 }
+/*Styling the sections below the hero other than the sidebar*/
+footer , .container {
+    width : 80% ;
+    margin-right : 20% ;
+}
 /* Styling the sidebar 
-  line 2 --> stays in the same place even when the page is scrolled
-  line8 --> Scroll placement when scrolling content from the sidebar  */
-.fixed-div {
-    width: 20%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: #f8f9fa;
-    margin-top: 3.5rem ;
-    overflow-y : auto ; 
-    text-align: right ;
-}
-/* Styling the left part of the body  */
-.flexible-div {
-    margin-right:20%;
-    background-color: #e9ecef;
-    height: 100vh;
-    overflow-y : visible ; 
-}
+line 2 --> stays in the same place even when the page is scrolled
+line8 --> Scroll placement when scrolling content from the sidebar  */
+#sidebar{
+  position: fixed;
+  width :20% ;
+  top: 32rem; /* Adjust this value based on the height of the first item */
+  right: 0;
+  bottom: 0;
+  overflow-y : auto ;
+  background-color: #f8f9fa;
+  text-align: right ;
+  transition: height 0.3s, top 0.3s;
+  }
 /* Place the space from the left side for better readability for the text header and the reports below it */ 
 .col-xl , .margin-text{
     margin-right : 0.5rem ;
     padding-right : 0.5rem ; 
 }
-/* Styling all the classes whose name is accordion (whether in Bootstrap or otherwise)*/
-.accordion {
+/*Styling the upper body parts of the sidebar*/
+.mynav {
+    color: #fff;
+}
+/* Styling the lower part of the sidebar */
+#sidebar .d-flex {
+    list-style: none;
+    border-radius: 5px ;
+    padding: 8px 5px;
+}
+/* Styling the titles in the sidebar */
+.mynav li a , .d-flex li a{
+    color: #fff;
+    text-decoration: none;
     width: 100%;
-    margin: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-/* Styling after the anthem sidebar titles */
-.accordion-button::after {
-    margin-left: 0%;
-    margin-right: auto;
-}
-/* Styling the sidebar */ 
-.accordion-item {
-    border-bottom: 1px solid #ccc;
-}
-/* Styling the last child sidebar */
-.accordion-item:last-child {
-    border-bottom: none;
-}
-/* Styling the sidebar header */
-.accordion-header , .accordion-header-1{
-    background-color: #f1f1f1;
-    cursor: pointer;
-    padding: 10px;
-    text-align: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* Styling the sidebar that is the main sidebar content */
-.accordion-1 {
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-/* Styling the content of the sidebar content */
-.accordion-content-1 {
-    display: none;
-    padding: 10px;
-    background-color: #fff;
-}
-/* Styling the a tags in the sidebar content */
-.accordion-content-1 a{
     display: block;
+    border-radius: 5px;
+    padding: 8px 5px;
 }
-/* Styling for decorative additions before the actual tool */
-.accordion-header-1::before {
-    content:  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m20 9l-8 8l-8-8l1.414-1.414L12 14.172l6.586-6.586z'/%3E%3C/svg%3E")  ;
-    margin-left: 10px;
+/* */
+.mynav li a.active {
+    background: rgba(255, 255, 255, 0.2);
 }
-/* After clicking on the site load page and before its main */
-.accordion-header-1.active::before {
-    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1em' height='1em' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m4 15l8-8l8 8l-1.414 1.414L12 9.828l-6.586 6.586z'/%3E%3C/svg%3E")
-    ;
+/* Styling when navigating on sidebar titles */
+.mynav li a:hover , #sidebar .d-flex:hover{
+    background: rgba(255, 255, 255, 0.2);
 }
-/*  */
-.social-icon {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: all 0.5s ease;
+/* Styling the number displayed after saved articles */
+.notification-badge {
+    background-color: rgba(255, 255, 255, 0.7);
+    float: left;
+    color: #222;
+    font-size: 14px;
+    padding: 0px 8px;
+    border-radius: 4px;
+}
+/* Styling the sections below the hero when the page length is at most 768 pixels */
+@media screen and (max-width : 768px){
+    footer , .container {
+        width : 100% ;
+        margin-right : 0% ;
+    }
+    
 }

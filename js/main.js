@@ -1,15 +1,22 @@
-// انتخاب هر کلاسی به نام accordion-header-1 و ایجاد حلقه برای هر کدام از آنها
-document.querySelectorAll('.accordion-header-1').forEach(header => {
-    // ایجاد تابعی برای هنگام کلیک بر روی عنصر header
-    header.addEventListener('click', () => {
-        // اضافه یا حذف کردن header کلاس active
-        header.classList.toggle('active');
-        // ذخبره محتوای بعد از header در متغیری به نام content
-        const content = header.nextElementSibling;
-        if (content.style.display === 'block') {
-            content.style.display = 'none';
-        } else {
-            content.style.display = 'block';
-        }
-    });
+// Equalizing the top sidebar with the height of the hero
+let hero = document.querySelector('#hero-container');
+let sidebar = document.getElementById('sidebar');
+let sidetop = `calc(5 + ${hero.offsetHeight})`;
+sidebar.style.top = `${sidetop}px`;
+// Proportioning the size of the sidebar to the amount the user scrolls down the page
+window.addEventListener('scroll', function() {
+    let sidebar = document.getElementById('sidebar');
+    let item1 = document.querySelector('#hero');
+    let item1Bottom = item1.getBoundingClientRect().bottom;
+    let scrollY = window.scrollY;
+    // When the user is down enough to not see the hero, the height of the sidebar will be the same as the whole screen
+    if (item1Bottom <= 0) {
+        sidebar.style.height = '100vh';
+        sidebar.style.top = '0';
+    }
+    // When the user is lowered enough to see the hero, the height of the sidebar will increase by the lowered amount
+    else {
+        sidebar.style.height = `calc(100% - 32rem + ${scrollY}px)`; /* Adjust this value based on the height of the first item */
+        sidebar.style.top = `calc(32rem - ${scrollY}px)`; /* Adjust this value based on the height of the first item */
+    }
 });
