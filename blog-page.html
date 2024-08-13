@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="css/styletwo.css">
 </head>
 <body>
+    <!-- A fixed div for nav bar -->
+    <div class="fixed-top-custom">
+            <!-- header -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+              <div class="container-fluid">
+                <button
+                    class="navbar-toggler border border-0 shadow-none"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand fw-bold" href="#">برند</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">خانه</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">مطالب</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">درباره ما</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">تماس با ما</a>
+                            </li>
+                  </ul>
+                  <!-- search -->
+                  <form class="d-flex" role="search">
+                            <input
+                              class="form-control ms-2 border-0 shadow-none"
+                              type="search"
+                              placeholder="جستجو"
+                              aria-label="Search"
+                            />
+                            <button class="btn btn-outline-success" type="submit">جستجو</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+    </div>
     <!-- JavaScript files -->
     <script src="js/bootstrap.min.js"></script>
 </body>
