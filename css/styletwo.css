@@ -1,0 +1,58 @@
+/* Styling all linked text */
+a{
+    text-decoration: none;
+}
+/* Styling the sidebar 
+line 2 --> stays in the same place even when the page is scrolled
+line8 --> Scroll placement when scrolling content from the sidebar  */
+#sidebar{
+    height: 100vh;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    z-index: 1; /* Ensure it is above other content */
+    top: 0;
+    right : 0;
+    margin-bottom: 2.5rem;
+    padding-top: 1.5rem;
+    border-radius:0.6rem ;
+    background-color:  #a4a7a0 ;
+    color : rgb(0, 0, 0) ;
+    text-align: right;
+}
+/* Place the space from the left side for better readability for the text header and the reports below it */ 
+.col-xl , .margin-text{
+    margin-right : 0.5rem ;
+}
+/* Styling the upper body parts of the sidebar */
+.mynav {
+    color: #fff;
+}
+/* Styling the lower part of the sidebar */
+#sidebar .d-flex {
+    list-style: none;
+    border-radius: 5px ;
+    padding: 0;
+}
+/* Styling the titles in the sidebar */
+.mynav li a , .d-flex li a{
+    color: #0a0a0a;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem ;
+}
+/* Styling when navigating on sidebar titles */
+.mynav li a:hover , #sidebar .d-flex:hover{
+    background: rgba(27, 22, 22, 0.2);
+}
+/* Styling the sidebar header */
+#sidebar h2{
+    color : rgb(0, 0, 0) ;
+    cursor : pointer;
+    border-radius: 0.5rem ;
+    padding-right: 0;
+}
+/* Styling when the mouse is on the sidebar */
+#sidebar h2:hover{
+    background: rgba(27, 22, 22, 0.2);
+}
