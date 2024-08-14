@@ -56,3 +56,7 @@ line8 --> Scroll placement when scrolling content from the sidebar  */
 #sidebar h2:hover{
     background: rgba(27, 22, 22, 0.2);
 }
+/* Styling the footer */
+footer {
+    background-color: #a4a8a0 ;
+}
