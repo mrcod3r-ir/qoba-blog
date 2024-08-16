@@ -1,6 +1,14 @@
 $primary: #00008b;
 $secondary: #aa33d6;
 $light: #6c757d;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
 @import "..//node_modules/bootstrap/scss/bootstrap.scss";
 @import "../css/Vazirmatn-font-face.css";
 
@@ -18,30 +26,30 @@ body {
 .cursor-pointer{
   cursor: pointer;
 }
-// sajad classes 
-.sajad-p{
+// contact classes 
+.contact-p{
   color: #6c757d;
 }
 .text-blue-500{
   color: $blue-600;
 }
-.sajad-hr{
+.contact-hr{
   margin: 32px 0;
 }
-.sajad-p-2{
+.contact-p-2{
   font-size: 14px;
 }
-.sajad-darkblue{
+.contact-darkblue{
   color: darkblue;
 }
-.sajad-input{
+.contact-input{
   min-height: 45px;
 }
-.sajad-input-2{
+.contact-input-2{
   min-height: 250px;
   word-wrap: break-all;
 }
-.sajad-textarea{
+.contact-textarea{
   height: 250px;
 }
 .hv-bg-g:hover{
@@ -54,4 +62,17 @@ div[class="d-inline-flex gap-2 hv-bg-g"]{
 button[class="btn btn-light"]{
   background-color: rgb(197, 197, 197);
 }
-//done
+#footer-p-col1 {
+  line-height: 2;
+}
+// email input in footer
+.footer-input{
+  border: none;
+  background-color: #dbdfd8;
+  border-radius: 8px;
+  padding: 13px 10px 13px 35px;
+  width: 215px;
+  background-repeat: no-repeat;
+  outline: 2px solid $primary;
+}
+//respons
