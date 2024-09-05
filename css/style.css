@@ -11978,3 +11978,109 @@ body {
   background: rgb(202, 207, 196);
   background: linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(202, 207, 196) 100%);
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Vazirmatn;
+}
+
+.d-flex input {
+  border: 1px solid darkblue;
+}
+
+.d-flex input:hover,
+.d-flex input:focus {
+  border: 0;
+}
+
+.bg {
+  color: darkblue;
+}
+
+.ta {
+  font-size: 14px;
+}
+
+.bg {
+  background: rgb(202, 207, 196);
+  background: linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(202, 207, 196) 100%);
+}
+
+.items input:focus {
+  outline: 0;
+}
+
+.items textarea:focus {
+  outline: 0;
+}
+
+.items input {
+  border: 1px solid gray;
+}
+
+.items input::-moz-placeholder {
+  font-size: 12px;
+}
+
+.items input::placeholder {
+  font-size: 12px;
+}
+
+.items textarea::-moz-placeholder {
+  font-size: 12px;
+}
+
+.items textarea::placeholder {
+  font-size: 12px;
+}
+
+.items textarea {
+  height: 100px;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.comment p {
+  background-color: darkblue;
+  color: white;
+}
+
+.comment {
+  background: rgb(202, 207, 196);
+  background: linear-gradient(90deg, rgb(223, 223, 223) 0%, rgb(202, 207, 196) 100%);
+}
+
+.rule {
+  border-top: 1px gray;
+  border-top-style: dotted;
+}
+
+.submit input {
+  background-color: darkblue;
+  color: white;
+}
+
+.submit input:hover {
+  background-color: rgb(3, 3, 152);
+}
+
+li {
+  list-style-type: none;
+}
+
+#footer-p-col1 {
+  line-height: 2;
+}
+
+input {
+  border: none;
+  background-color: #dbdfd8;
+  border-radius: 8px;
+  padding: 13px 10px 13px 35px;
+  width: 215px;
+  background-repeat: no-repeat;
+  outline: 2px solid darkblue;
+}
