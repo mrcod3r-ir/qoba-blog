@@ -44,3 +44,24 @@ input{
   background-repeat: no-repeat;
   outline: 2px solid $primary;
 }
+
+// MMD ESi start
+.w-10 {
+  width: 10%;
+}
+.w-5 {
+  width: 5%;
+}
+.border-Primary {
+  border: 1px solid darkblue;
+}
+.Button-Primary {
+  background-color: darkblue;
+
+} 
+.active-button {
+  background-color: darkblue;
+  border-radius: 1mm;
+  color: white;
+}
+// MMD ESi end

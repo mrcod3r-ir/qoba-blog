@@ -53,16 +53,15 @@
     <!-- hero -->
     <div class="px-4 py-5 my-5 text-center position-relative heroBg">
       <h1 class="display-5 fw-bold text-body-emphasis my-5 position-relative z-3">
-        لورم ایپسوم
+        مجله
       </h1>
     </div>
     <!-- container -->
     <div class="container">
-      <!-- posts -->
       <div class="row">
+        <!-- side bar -->
         <div class="col-3">
-          <!-- side bar -->
-          <div class="container heroBg rounded p-3 mb-3 sticky-top" style="top: 75px;">
+          <div class="container heroBg rounded p-3 mb-4 sticky-top" style="top: 75px;">
             <h3 class="my-3 mx-2 text-primary" >دسته بندی ها</h3>
             <ul class="px-3">
               <li class="mb-2 ">
@@ -79,6 +78,7 @@
             <p class="text-light m-3s">پایگاه خبری مسجد قبا </p>
           </div>
         </div>
+        <!-- posts -->
         <div class="col-9">
           <div class="row">
             <div class="col-4 mb-4">
@@ -239,6 +239,26 @@
               </div>
             </div>
           </div>
+          <!-- button -->
+          <div class="d-flex justify-content-center">
+            <ul class="w-50 d-flex gap-3 justify-content-center">
+              <li class="d-flex justify-content-center bordr hover rounded w-10 Button-Primary" id="prevButton">
+                <a href="#" class="text-decoration-none w-100 text-center text-white" >قبلی</a>
+              </li>
+              <li class="d-flex justify-content-center bordr hover rounded w-5 border-Primary" >
+                <a href="#" class="text-decoration-none w-100 text-center PageButton" >۱</a>
+              </li>
+              <li class="d-flex justify-content-center bordr hover rounded w-5 border-Primary" >
+                <a href="#" class="text-decoration-none w-100 text-center PageButton" >۲</a>
+              </li>
+              <li class="d-flex justify-content-center bordr hover rounded w-5 border-Primary" >
+                <a href="#" class="text-decoration-none w-100 text-center PageButton" >۳</a>
+              </li>
+              <li class="d-flex justify-content-center bordr hover rounded w-10 Button-Primary" id="nextButton">
+                <a href="#" class="text-decoration-none w-100 text-center text-white" >بعدی</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -285,5 +305,6 @@
     </footer>
     <!-- script -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
