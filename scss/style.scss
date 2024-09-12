@@ -57,6 +57,10 @@ body {
     );
 }
 // change input box style
+footer input {
+  outline: 0;
+  border: 2px solid gray;
+}
 .items input:focus {
     outline: 0;
 }
@@ -112,60 +116,26 @@ body {
 .submit input:hover {
     background-color: rgb(3, 3, 152);
 }
+.sidebar {
+  color: darkblue;
+}
+.sidecolor {
+  color: rgb(40, 40, 40);
+}
+.sidecolor2 {
+  color: rgb(0, 0, 70);
+}
+.sidecolor:hover {
+  color:  rgb(100, 99, 99);
+}
 // single-blog end 
 li{
     list-style-type: none;
   }
 #footer-p-col1 {
   line-height: 2;
-   }
-  // email input in footer
-  input{
-    border: none;
-    background-color: #dbdfd8;
-    border-radius: 8px;
-    padding: 13px 10px 13px 35px;
-    width: 215px;
-    background-repeat: no-repeat;
-    outline: 2px solid $primary;
-  }
-  
-$primary: darkblue;
-$secondary: #aa33d6;
-$light: #6c757d;
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
-// MMD ESi start
-.w-20 {
-    width: 20%;
-  }
-  .w-15 {
-    width: 15%;
-  }
-  .w-10 {
-    width: 10%;
-  }
-  .w-5 {
-    width: 5%;
-  }
-  .border-Primary {
-    border: 1px solid darkblue;
-  }
-  .Button-Primary {
-    background-color: darkblue;
-  
-  } 
-  .active-button {
-    background-color: darkblue;
-    border-radius: 1mm;
-    color: white;
-  }
-  // MMD ESi end
-
+}
+li a {
+  color: darkblue;
+}
 
